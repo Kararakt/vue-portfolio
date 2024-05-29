@@ -1,0 +1,27 @@
+.app {
+  font-family: $ff-raleway, Arial, Helvetica, sans-serif;
+  font-size: $fs-m;
+  line-height: 1.5rem;
+  font-weight: $fw-normal;
+
+  background-color: $light-gray;
+
+  min-width: 20rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    @include transition;
+
+    &_scroll {
+      box-shadow: $shadow-xl;
+    }
+  }
+}

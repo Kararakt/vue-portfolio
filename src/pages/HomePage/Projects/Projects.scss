@@ -1,0 +1,12 @@
+.projects {
+  padding-top: 5.625rem;
+
+  &__container {
+    display: grid;
+    gap: 2rem;
+
+    @include upMedia(md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}

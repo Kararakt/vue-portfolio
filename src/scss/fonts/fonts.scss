@@ -1,0 +1,15 @@
+@font-face {
+  font-family: $ff-raleway;
+  font-weight: $fw-normal;
+  font-style: normal;
+  src: url("./Raleway/Raleway-Regular.woff") format("woff"),
+    url("./Raleway/Raleway-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: $ff-raleway;
+  font-weight: $fw-bold;
+  font-style: normal;
+  src: url("./Raleway/Raleway-Bold.woff") format("woff"),
+    url("./Raleway/Raleway-Bold.woff2") format("woff2");
+}

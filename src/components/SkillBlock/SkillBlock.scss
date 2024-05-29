@@ -1,0 +1,24 @@
+.skill-block {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  @include transition;
+  @include shadow-scale(1.05);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    color: $black;
+    font-size: $fs-m;
+  }
+}

@@ -1,0 +1,16 @@
+.section-header {
+  &__title {
+    color: $blue;
+    font-size: $fs-xl;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $black;
+    font-size: $fs-4xl;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

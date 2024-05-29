@@ -1,0 +1,26 @@
+.home {
+  @include container;
+  padding-top: 4rem;
+
+  &__scroll {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  &__button {
+    cursor: pointer;
+    border: 0;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 3.875rem;
+    width: 3.875rem;
+    background-image: url("/up.svg");
+    background-repeat: no-repeat;
+    background-size: 1.875rem;
+    background-position: center;
+    @include transition;
+    @include shadow-scale(1.1);
+  }
+}

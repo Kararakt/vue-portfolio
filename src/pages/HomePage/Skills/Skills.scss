@@ -1,0 +1,16 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5.625rem;
+
+  &__all-skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, 17.875rem);
+    justify-content: center;
+  }
+}

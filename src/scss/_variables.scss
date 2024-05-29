@@ -1,0 +1,39 @@
+// Цвета
+$white: hsl(0, 0%, 100%);
+$black: hsl(215, 28%, 17%);
+$light-black: hsla(0, 0%, 0%, 0.1);
+$blue: hsl(242, 74%, 61%);
+$light-blue: hsl(221, 100%, 72%);
+$gray: hsl(215, 14%, 34%);
+$dark-gray: hsl(217, 19%, 27%);
+$light-gray: hsl(206, 23%, 94%);
+
+// Шрифты
+$ff-raleway: "Raleway";
+
+//  Насыщенность
+$fw-normal: 400;
+$fw-bold: 700;
+
+// Размер текста
+$fs-base: 1rem;
+
+$fs-s: 0.875rem;
+$fs-m: $fs-base;
+$fs-l: 1.125rem;
+$fs-xl: 1.25rem;
+$fs-2xl: 1.5rem;
+$fs-4xl: 2.25rem;
+$fs-6xl: 3.75rem;
+
+// Тень
+$shadow-xl: 0 1.25rem 1.5625rem -0.3125rem $light-black,
+  0 0.5rem 0.625rem -0.375rem $light-black;
+
+// Точки остановы
+$breakpoints: (
+  "sm": 40rem,
+  "md": 48rem,
+  "lg": 64rem,
+  "xl": 77.5rem,
+);

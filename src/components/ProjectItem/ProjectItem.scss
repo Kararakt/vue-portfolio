@@ -1,0 +1,57 @@
+.project-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  box-shadow: $shadow-xl;
+
+  background-image: linear-gradient(to right, $blue, $light-blue);
+
+  &:hover & {
+    &__image {
+      opacity: 0.1;
+    }
+
+    &__info {
+      display: flex;
+    }
+  }
+
+  &__image {
+    border-radius: 0.75rem;
+    height: 100%;
+    width: 100%;
+    @include transition;
+  }
+
+  &__info {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    color: $white;
+  }
+
+  &__title {
+    font-size: $fs-2xl;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background-color: $white;
+    color: $dark-gray;
+    font-weight: $fw-bold;
+    font-size: $fs-l;
+    @include transition;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

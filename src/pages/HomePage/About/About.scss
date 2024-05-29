@@ -1,0 +1,48 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding-top: 5.625rem;
+
+  &__container {
+    gap: 2rem;
+    margin: auto;
+
+    @include upMedia(md) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    max-width: 50rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    color: $gray;
+    @include transition;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: auto;
+    @include transition;
+    @include shadow-scale(1.05);
+
+    @include upMedia(md) {
+      max-width: 24.5rem;
+      height: auto;
+    }
+  }
+
+  &__image {
+    border-radius: 0.75rem;
+  }
+}
