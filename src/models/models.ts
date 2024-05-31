@@ -9,6 +9,7 @@ export interface Project {
   title: string;
   mainSkill: string;
   src: string;
+  description: string;
   skills: string[];
   githubURL: string;
   demoURL: string;

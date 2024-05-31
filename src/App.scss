@@ -7,6 +7,7 @@
   background-color: $light-gray;
 
   min-width: 20rem;
+  min-height: 100dvh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,8 +16,9 @@
   -webkit-text-size-adjust: 100%;
 
   &__header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 20;
     @include transition;
 

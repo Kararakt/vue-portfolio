@@ -7,7 +7,7 @@
   border-radius: 0.75rem;
   box-shadow: $shadow-xl;
 
-  background-image: linear-gradient(to right, $blue, $light-blue);
+  background-image: linear-gradient(to right, $purple, $light-purple);
 
   &:hover & {
     &__image {
@@ -23,6 +23,7 @@
     border-radius: 0.75rem;
     height: 100%;
     width: 100%;
+    object-fit: cover;
     @include transition;
   }
 

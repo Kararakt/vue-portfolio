@@ -1,0 +1,94 @@
+.project {
+  &__hero {
+    color: $white;
+    background: linear-gradient(to right, $purple-800, $purple-800),
+      url("/common-bg.svg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  &__hero-content {
+    padding-top: 25rem;
+    padding-bottom: 17rem;
+    @include container;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__hero-title {
+    font-size: $fs-6xl;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+    line-height: normal;
+  }
+
+  &__details {
+    @include container;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__image {
+    border-radius: 0.75rem;
+    box-shadow: $shadow-xl;
+    object-fit: contain;
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: $fs-2xl;
+    color: $dark-gray;
+    line-height: normal;
+    margin-bottom: 1.875rem;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: $fs-l;
+    margin-bottom: 2.5rem;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    padding: 0;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  &__skill {
+    color: $black;
+    padding: 1rem 2rem;
+    font-weight: $fw-bold;
+    font-size: $fs-l;
+    @include transition;
+    @include shadow-scale(1.05);
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__link {
+    background-color: $purple;
+    color: $white;
+    font-size: $fs-l;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    @include transition;
+
+    &:hover {
+      border-color: $purple;
+      background-color: $white;
+      color: $purple;
+    }
+  }
+}
