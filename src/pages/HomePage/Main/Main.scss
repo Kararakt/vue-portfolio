@@ -18,11 +18,20 @@
   }
 
   &__title {
-    font-size: $fs-6xl;
-    line-height: 1;
+    font-size: $fs-4xl;
+    line-height: 2.25rem;
     color: $dark-gray;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @include upMedia(sm) {
+      font-size: $fs-5xl;
+      line-height: 1;
+    }
+
+    @include upMedia(md) {
+      font-size: $fs-6xl;
+    }
 
     &_space {
       margin-top: 0.5rem;
@@ -35,16 +44,20 @@
   }
 
   &__about {
-    max-width: 50%;
     color: $gray;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @include upMedia(sm) {
+      max-width: 50%;
+    }
   }
 
   &__contacts {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     gap: 1.5rem;

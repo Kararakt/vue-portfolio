@@ -9,18 +9,26 @@
   }
 
   &__hero-content {
-    padding-top: 25rem;
-    padding-bottom: 17rem;
     @include container;
     text-align: center;
     margin: auto;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+
+    @include upMedia(md) {
+      padding-top: 25rem;
+      padding-bottom: 17rem;
+    }
   }
 
   &__hero-title {
-    font-size: $fs-6xl;
     text-transform: uppercase;
-    letter-spacing: 0.1875rem;
+    font-size: $fs-4xl;
     line-height: normal;
+
+    @include upMedia(md) {
+      font-size: $fs-6xl;
+    }
   }
 
   &__details {
