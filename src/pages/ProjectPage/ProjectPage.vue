@@ -3,10 +3,27 @@ import './ProjectPage.scss';
 
 import { projects } from '../../utils/constants';
 
+const originalTitle = ref(document.title);
+
 const router = useRoute();
 const id = router.params.id;
 
 const project = computed(() => projects.filter((item) => item.title === id)[0]);
+
+watch(
+  router,
+  () => {
+    document.title = `Проект ${project.value.title}`;
+  },
+  {
+    immediate: true,
+  }
+);
+
+onBeforeRouteLeave((_to, _from, next) => {
+  document.title = originalTitle.value;
+  next();
+});
 </script>
 
 <template>

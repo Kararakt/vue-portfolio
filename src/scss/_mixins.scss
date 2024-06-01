@@ -14,11 +14,23 @@
   transition: all $duration $timing-function;
 }
 
+// media вида (min-width: x), где x breakpoints
 @mixin upMedia($b) {
   @if map-has-key($breakpoints, $b) {
     $v: map-get($breakpoints, $b);
 
     @media (min-width: $v) {
+      @content;
+    }
+  }
+}
+
+// media вида (max-width: x), где x breakpoints
+@mixin downMedia($b) {
+  @if map-has-key($breakpoints, $b) {
+    $v: map-get($breakpoints, $b);
+
+    @media (max-width: $v) {
       @content;
     }
   }
