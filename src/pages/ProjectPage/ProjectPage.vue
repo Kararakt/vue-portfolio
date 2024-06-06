@@ -3,12 +3,31 @@ import './ProjectPage.scss';
 
 import { projects } from '../../utils/constants';
 
+interface Link {
+  id: number;
+  title: string;
+  href: string;
+}
+
 const originalTitle = ref(document.title);
 
 const router = useRoute();
 const id = router.params.id;
 
 const project = computed(() => projects.filter((item) => item.title === id)[0]);
+
+const links: Link[] = [
+  {
+    id: 1,
+    title: 'Ссылка на просмотр',
+    href: project.value.demoURL,
+  },
+  {
+    id: 2,
+    title: 'Репозиторий',
+    href: project.value.githubURL,
+  },
+];
 
 watch(
   router,
@@ -51,20 +70,14 @@ onBeforeRouteLeave((_to, _from, next) => {
       <h3 class="project__title">Смотрите вживую</h3>
       <div class="project__links">
         <a
-          :href="project.demoURL"
+          v-for="link in links"
+          :key="link.id"
+          :href="link.href"
           rel="noreferrer"
           target="_blank"
           class="project__link"
         >
-          Ссылка на код
-        </a>
-        <a
-          :href="project.githubURL"
-          rel="noreferrer"
-          target="_blank"
-          class="project__link"
-        >
-          Репозиторий
+          {{ link.title }}
         </a>
       </div>
     </div>
