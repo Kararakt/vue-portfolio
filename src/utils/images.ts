@@ -9,6 +9,7 @@ import css from '../images/css.svg';
 import sass from '../images/sass.svg';
 import vue from '../images/vue.svg';
 import git from '../images/git.svg';
+import nodejs from '../images/nodejs.svg';
 
 import project1 from '../images/project1.jpeg';
 import project2 from '../images/project2.jpeg';
@@ -29,6 +30,7 @@ const images: Record<string, string> = {
   sass,
   vue,
   git,
+  nodejs,
   project1,
   project2,
   project3,

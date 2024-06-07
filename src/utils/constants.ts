@@ -107,6 +107,11 @@ export const skills: Skill[] = [
     src: images.github,
     title: 'Github',
   },
+  {
+    id: 9,
+    src: images.nodejs,
+    title: 'Node.js',
+  },
 ];
 
 export const projects = reactive<Project[]>([
