@@ -1,9 +1,37 @@
-# Vue 3 + TypeScript + Vite
+## Проект [портфолио](https://vue-portfolio-kararakt.vercel.app)
+Это проект портфолио, созданный с использованием Vue. Применена методология БЭМ. Приложение так же имеет адаптивную верстку под любые устройства.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Содержание
+- [Технологии](#технологии)
+- [Требования](#требования)
+- [Установка](#установка)
+- [Ссылка на проект](#ссылка-на-проект)
 
-## Recommended Setup
+## Технологии
+- HTML
+- SCSS
+- TypeScript
+- Vue
+- Vite
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Требования
+Для запуска проекта, необходимо установить:
+- [NodeJS](https://nodejs.org/en/download)
+- [pnpm](https://pnpm.io/installation)
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Установка
+1. Клонируйте репозиторий
+```sh
+git@github.com:Kararakt/vue-portfolio.git
+```
+2. Установите все необходимые PNPM пакеты
+```sh
+pnpm install
+```
+3. Запустите проект
+```sh
+pnpm dev
+```
+
+## Ссылка на проект
+https://vue-portfolio-kararakt.vercel.app
